@@ -29,6 +29,7 @@ grid-template-columns:repeat(2,1fr) ;
 @media (max-width:880px){
    grid-gap:.2vh;
    margin:0;
+   grid-template-columns:1fr ;
 }
 `
 
@@ -48,7 +49,7 @@ const Experience = ({exp}) => {
         <p >{item.period}</p>
      </Grid>
    :
-        <Grid key={item.id}>
+      <Grid key={item.id}>
         <h3>* {item.compnyName}</h3>
         <p>{item.rule}</p>
         <p >{item.period}</p>
